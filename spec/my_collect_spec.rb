@@ -37,7 +37,7 @@ describe "my_collect" do
   end
 
   it "returns a new collection of appropriately modified elements, in this case student first names" do
-    expect(my_collect(students) do |language|
+    expect(my_collect(students) do |student|
       student.split(" ").first
     end).to eq(["Tim", "Tom", "Sophie", "Antoin"])
   end
